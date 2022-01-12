@@ -1,0 +1,417 @@
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<title>Somtoday - Samen Slimmer Onderwijs</title>
+<meta name="application-name" content="Somtoday">
+<meta name="author" content="Topicus Onderwijs B.V.">
+<meta name="description" content="Compleet leerlingvolgsysteem voor slimmer sturen, leren, zorgen, beheren en administreren in het voortgezet onderwijs.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=1.0">
+<meta name="robots" content="noindex">
+<script type="text/javascript" src="../wicket/resource/org.apache.wicket.resource.JQueryResourceReference/jquery/jquery-3.6.0-ver-7B432A70897DCD6A8F6D26413CDF1916.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.components.menu.header.DateLabelJavaScriptResourceReference/jquery.datelabel-ver-0AE1651BFAEC879EC98714184CB57E69.js"></script>
+<script type="text/javascript" src="../wicket/resource/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/wicket-jquery-bundle-ver-4D09ABFD59C4D1E8C40853E2941D8163.js"></script>
+<script type="text/javascript" id="wicket-ajax-base-url">
+/*<![CDATA[*/
+Wicket.Ajax.baseUrl="home/news?5";
+/*]]>*/
+</script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.wiquery.resources.ResourceRefUtil/json2-ver-BA3293970E13B03A2EA92F5B6B5BF544.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.behaviors.ServerCallAjaxBehaviour/servercall-ver-1BD74B29477C92B5665667CA005BCDD6.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.cobra.web.components.modal.ModalDialogContainerResourceReference/modalDialogContainer-ver-3E0B3678490D81247D11D1D459F7884D.js"></script>
+<link rel="stylesheet" type="text/css" href="../wicket/resource/org.wicketstuff.wiquery.ui.themes.WiQueryCoreThemeResourceReference/smoothness/jquery-ui-ver-4F4ED392E3B6588BA1AB857CBB7343BD.css" />
+<script type="text/javascript" src="../wicket/resource/org.wicketstuff.wiquery.ui.JQueryUIJavaScriptResourceReference/jquery-ui-ver-0A819924D70A18322660DEE759225D2B.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.components.panels.tweeluik.TweeluikPanel/detailpanel-ver-BD31D0238156618F472FF3D704A6870D.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/main-ver-B2978D8428C853D913BAF3556F62F1B2.css" />
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.pages.general.RhodiumSecureBasePage/ajaxindicator-ver-DFFD8DD9BC2501CD29268402D049A2C2.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.pages.general.RhodiumSecureBasePage/nprogress-ver-E202DD9292C8F2ADFD93A658E26A457B.js"></script>
+<link rel="stylesheet" type="text/css" href="../wicket/resource/nl.topicus.rhodium.web.pages.general.RhodiumSecureBasePage/nprogress-ver-ECB9AE63F85FB9576A0B0F2EA383F465.css" />
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.resources.HistoryCompatibleLinkResourceReference/historycompatiblelink-ver-3F6D55268776E4B48D52BACA7A8576DA.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.resources.ApplicationPageResourceReference/applicationpage-ver-4CD38993F42C10A1D45FB0B6C6DCC3D7.js"></script>
+<script type="text/javascript" src="../wicket/resource/nl.topicus.rhodium.web.resources.AutoLogoutResourceReference/autologout-ver-ABF7A379608DA35E5B70A624F402A78B.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+Wicket.Event.add(window, "domready", function(event) { 
+$('#id131').datelabel();;
+$('#id132').bookmarkableLink();;
+$('#id132').bindServerCall({ajax: {"u":"./news?5-4.0-userPanel-loggedInData-inbox","m":"POST","c":"id132"}});;
+$('#id133').bookmarkableLink();;
+$('#id133').bindServerCall({ajax: {"u":"./news?5-4.0-userPanel-loggedInData-profile","m":"POST","c":"id133"}});;
+$('#id134').bookmarkableLink();;
+$('#id134').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-moreItems","m":"POST","c":"id134"}});;
+$('#id1b2').bookmarkableLink();;
+$('#id1b2').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-listview-0-dagRooster-items-0-clickableElement","m":"POST","c":"id1b2"}});;
+$('#id1b3').bookmarkableLink();;
+$('#id1b3').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-listview-0-dagRooster-items-1-clickableElement","m":"POST","c":"id1b3"}});;
+$('#id1b4').bookmarkableLink();;
+$('#id1b4').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-listview-1-dagRooster-items-0-clickableElement","m":"POST","c":"id1b4"}});;
+$('#id1b5').bookmarkableLink();;
+$('#id1b5').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-listview-2-dagRooster-items-1-clickableElement","m":"POST","c":"id1b5"}});;
+$('#id1b6').bookmarkableLink();;
+$('#id1b6').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-activities-listview-3-dagRooster-items-0-clickableElement","m":"POST","c":"id1b6"}});;
+$('.activityMaster .date').parent().each(function(int, el){    if($(el).children('.m-wrapper').length == 0)       $(el).remove(); });;
+$('#id139').bookmarkableLink();;
+$('#id139').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-filterFeedItems","m":"POST","c":"id139"}});;
+$('#id139').tooltip({content: "<p>Verberg berichten<\/p>", items: "#id139"});;
+$('#id13a').bookmarkableLink();;
+$('#id13a').bindServerCall({ajax: {"u":"./news?5-4.0-tweeluikPanel-tweeluikMaster-newsMaster-filterRosterItems","m":"POST","c":"id13a"}});;
+$('#id13a').tooltip({content: "<p>Verberg extra afspraken<\/p>", items: "#id13a"});;
+$y.nl/home/messages"><i class="icon-email"></i><span>Berichten</span> </a><span id="inbox-counter" class="no-unread-messages">0</span>
+
+
+<a href="./news?5-4.-userPanel-logout"><i class="icon-off"></i><span>Uitloggen</span></a>
+</div>
+
+</div>
+</div>
+</div>
+<div id='main-menu-wrapper'>
+<div id="main-menu">
+<div>
+<a id="news" href="https://elo.somtoday.nl/home/news" class="active">
+<span>
+<label class="IconFont MainMenuIcons icon-rss"></label>
+<q>nieuws</q>
+</span>
+</a>
+</div><div>
+<a id="roster" href="https://elo.somtoday.nl/home/roster" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-rooster"></label>
+<q>rooster</q>
+</span>
+</a>
+</div><div>
+<a id="homework" href="https://elo.somtoday.nl/home/homework" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-pencil"></label>
+<q>huiswerk</q>
+</span>
+</a>
+</div><div>
+<a id="grades" href="https://elo.somtoday.nl/home/grades" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-resultaten"></label>
+<q>cijfers</q>
+</span>
+</a>
+</div><div>
+<a id="subjects" href="https://elo.somtoday.nl/home/subjects" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-books"></label>
+<q>vakken</q>
+</span>
+</a>
+</div><div>
+<a id="absence" href="https://elo.somtoday.nl/home/absence" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-user-no"></label>
+<q>afwezigheid</q>
+</span>
+</a>
+</div><div>
+
+</div><div>
+
+</div><div>
+<a id="leermiddelen" href="https://elo.somtoday.nl/home/leermiddelen" class="">
+<span>
+<label class="IconFont MainMenuIcons icon-book"></label>
+<q>leermiddelen</q>
+</span>
+</a>
+</div>
+</div>
+<div id='main-menu-bottom'></div>
+</div>
+<div id='content-wrapper'>
+<div id='content'>
+
+<div class="loaderFade">
+<div id="master-panel" style="width:650px;">
+<div class="activityMaster" id="id148">
+<div class="panel-header">
+<div class="yellow ribbon">
+<p>
+<span>Getoond:</span>
+<a class="IconFont chk icon-envelope checked" title="Toon of verberg berichten" id="id139" href="https://elo.somtoday.nl/home/news?+feeditems=false"></a>
+<a class="IconFont chk icon-rooster checked" title="Toon of verberg extra afspraken" id="id13a" href="https://elo.somtoday.nl/home/news?+rosteritems=false"></a>
+<a class="IconFont chk icon-resultaten checked" title="Toon of verberg cijfers" id="id13b" href="https://elo.somtoday.nl/home/news?+gradesitems=false"></a>
+<a class="IconFont chk icon-user-warning checked" title="Toon of verberg maatregelen" id="id13c" href="https://elo.somtoday.nl/home/news?+maatregelitems=false"></a>
+</p>
+</div>
+<div class="left"><h1>Nieuws</h1></div>
+</div>
+<div id="activities">
+<div>
+<div class="date"><div><p class="date-day">wo</p><span>12</span><p class="date-month">jan.</p></div></div>
+
+
+<div class="m-wrapper bericht">
+<div class="m-element" id="id1b2" href="https://elo.somtoday.nl/home/news?+detail=5017582886808">
+<div>
+<div class="msgdetails1">
+<div class="type IconFont icon-envelope-open" aria-label="Gelezen"></div>
+<div class="sub right">
+<span class="right sub smaller">wo 12 jan. om 12:34</span>
+</div>
+<h2>VMA &amp; rondleidingen</h2>
+<div class="r_content sub">
+<span id="id1c1" hidden="" data-wicket-placeholder=""></span>
+<span id="id1c2"><span class="bold">van</span> <span>Dhr L.R. Brouwer</span></span>
+<span id="id1c3" hidden="" data-wicket-placeholder=""></span>
+</div>
+</div>
+</div>
+</div>
+</div><div class="m-wrapper bericht">
+<div class="m-element" id="id1b3" href="https://elo.somtoday.nl/home/news?+detail=5016613886378">
+<div>
+<div class="msgdetails1">
+<div class="type IconFont icon-envelope-open-attach" aria-label="Gelezen"></div>
+<div class="sub right">
+<span class="right sub smaller">wo 12 jan. om 09:43</span>
+</div>
+<h2>Buddylaptops t/m voorjaarsvakantie</h2>
+<div class="r_content sub">
+<span id="id1c4" hidden="" data-wicket-placeholder=""></span>
+<span id="id1c5"><span class="bold">van</span> <span>Dhr K.A. van Osch</span></span>
+<span id="id1c6" hidden="" data-wicket-placeholder=""></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><div>
+<div class="date"><div><p class="date-day">di</p><span>11</span><p class="date-month">jan.</p></div></div>
+
+
+<div class="m-wrapper bericht">
+<div class="m-element" id="id1b4" href="https://elo.somtoday.nl/home/news?+detail=5017500886319">
+<div>
+<div class="msgdetails1">
+<div class="type IconFont icon-envelope-open" aria-label="Gelezen"></div>
+<div class="sub right">
+<span class="right sub smaller">di 11 jan. om 17:27</span>
+</div>
+<h2>info over rondleidingen</h2>
+<div class="r_content sub">
+<span id="id1c7" hidden="" data-wicket-placeholder=""></span>
+<span id="id1c8"><span class="bold">van</span> <span>Mevr V.M. de Blocq van Scheltinga - Blocq, de</span></span>
+<span id="id1c9" hidden="" data-wicket-placeholder=""></span>
+</div>
+</div>
+</div>
+</div>
+</div><div class="m-wrapper resultaat">
+<div class="m-element no-click">
+
+<div class="IconFont type icon-resultaten" aria-label="Resultaten"></div>
+<h2>beeldende vorming</h2>
+<div class="r-content sub">
+<span class="right sub smaller">di 11 jan. om 17:00</span>
+<div>
+<span>
+
+<label>Je hebt </label> <label>voor de toets kamerplant</label> een <label><b class="normal"> 7.0</b> <label></label>  </label> gehaald.
+
+
+
+
+
+
+</span>
+</div>
+</div>
+
+</div>
+</div>
+
+</div><div>
+<div class="date"><div><p class="date-day">ma</p><span>10</span><p class="date-month">jan.</p></div></div>
+
+
+<div class="m-wrapper resultaat">
+<div class="m-element no-click">
+
+<div class="IconFont type icon-resultaten" aria-label="Resultaten"></div>
+<h2>drama</h2>
+<div class="r-content sub">
+<span class="right sub smaller">ma 10 jan. om 17:00</span>
+<div>
+<span>
+
+<label>Je hebt </label> <label>voor de toets Inzet/Participation</label> een <label><b class="normal"> V</b> <label></label>  </label> gehaald.
+
+
+
+
+
+
+</span>
+</div>
+</div>
+
+</div>
+</div><div class="m-wrapper bericht">
+<div class="m-element" id="id1b5" href="https://elo.somtoday.nl/home/news?+detail=4953875886392">
+<div>
+<div class="msgdetails1">
+<div class="type IconFont icon-envelope-open-attach" aria-label="Gelezen"></div>
+<div class="sub right">
+<span class="right sub smaller">ma 10 jan. om 08:27</span>
+</div>
+<h2>Bio nieuwe documenten</h2>
+<div class="r_content sub">
+<span id="id1ca" hidden="" data-wicket-placeholder=""></span>
+<span id="id1cb"><span class="bold">van</span> <span>Mevr A. van Loenhout-van Zanten</span></span>
+<span id="id1cc" hidden="" data-wicket-placeholder=""></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><div>
+<div class="date"><div><p class="date-day">zo</p><span>9</span><p class="date-month">jan.</p></div></div>
+
+
+<div class="m-wrapper bericht">
+<div class="m-element" id="id1b6" href="https://elo.somtoday.nl/home/news?+detail=4953875886373">
+<div>
+<div class="msgdetails1">
+<div class="type IconFont icon-envelope-open" aria-label="Gelezen"></div>
+<div class="sub right">
+<span class="right sub smaller">zo 09 jan. om 17:11</span>
+</div>
+<h2>morgen weer naar school!</h2>
+<div class="r_content sub">
+<span id="id1cd" hidden="" data-wicket-placeholder=""></span>
+<span id="id1ce"><span class="bold">van</span> <span>Mevr V.M. de Blocq van Scheltinga - Blocq, de</span></span>
+<span id="id1cf" hidden="" data-wicket-placeholder=""></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="load-more">
+<a id="id134" href="https://elo.somtoday.nl/home/news?+windowsize=+5">
+<div>Toon meer dagen</div>
+</a>
+</div>
+</div>
+</div>
+<div id="id155" hidden="" data-wicket-placeholder=""></div>
+<div id="id156" hidden="" data-wicket-placeholder=""></div>
+<div id="id157" hidden="" data-wicket-placeholder=""></div>
+<div id="id158" hidden="" data-wicket-placeholder=""></div>
+<div id="id159" hidden="" data-wicket-placeholder=""></div>
+<div id="id15a" hidden="" data-wicket-placeholder=""></div>
+<div id="id15b" hidden="" data-wicket-placeholder=""></div>
+<div id="id15c" hidden="" data-wicket-placeholder=""></div>
+</div>
+<div id="detail-panel-wrapper" style="width:280px;" data-width="280">
+<div id="detail-panel">
+<div class="activityDetail" id="id15d">
+<div id="id15e">
+<div class='panel-header'>
+<div class='left'>
+<h2>Rooster</h2>
+</div>
+</div>
+<div class="box small roster class first" id="id1b8">
+<div class="number">3</div>
+<div class='content'>
+<ul>
+<li><span class="name">A205 - AV1fne - Rli</span></li>
+<li><span class="name"></span></li>
+<li><span class="class-time">10:00 - 10:45</span></li>
+<li><span>R. Linnekamp</span></li>
+<li id="id1d0" hidden="" data-wicket-placeholder=""></li>
+<li><a id="id1b7" href="https://elo.somtoday.nl/home/roster?+detail=4307398952543&amp;+datum=12-01-2022" onClick="event.cancelBubble = true;">Openen</a> </li>
+</ul>
+</div>
+</div><div class="box small roster class" id="id1ba">
+<div class="number">4</div>
+<div class='content'>
+<ul>
+<li><span class="name">AZL3 - AV1flo - Vo</span></li>
+<li><span class="name"></span></li>
+<li><span class="class-time">11:15 - 12:00</span></li>
+<li><span>V.H.J. Boor</span></li>
+<li id="id1d1" hidden="" data-wicket-placeholder=""></li>
+<li><a id="id1b9" href="https://elo.somtoday.nl/home/roster?+detail=4307159906333&amp;+datum=12-01-2022" onClick="event.cancelBubble = true;">Openen</a> </li>
+</ul>
+</div>
+</div><div class="box small roster class" id="id1bc">
+<div class="number">5</div>
+<div class='content'>
+<ul>
+<li><span class="name">AZL3 - AV1flo - Vo</span></li>
+<li><span class="name"></span></li>
+<li><span class="class-time">12:00 - 12:45</span></li>
+<li><span>V.H.J. Boor</span></li>
+<li id="id1d2" hidden="" data-wicket-placeholder=""></li>
+<li><a id="id1bb" href="https://elo.somtoday.nl/home/roster?+detail=4307159906334&amp;+datum=12-01-2022" onClick="event.cancelBubble = true;">Openen</a> </li>
+</ul>
+</div>
+</div><div class="box small roster class" id="id1be">
+<div class="number">6</div>
+<div class='content'>
+<ul>
+<li><span class="name">A111 - AV1ffa - Grs</span></li>
+<li><span class="name"></span></li>
+<li><span class="class-time">13:15 - 14:00</span></li>
+<li><span>A.C.A. Gerrits</span></li>
+<li id="id1d3" hidden="" data-wicket-placeholder=""></li>
+<li><a id="id1bd" href="https://elo.somtoday.nl/home/roster?+detail=4307159906414&amp;+datum=12-01-2022" onClick="event.cancelBubble = true;">Openen</a> </li>
+</ul>
+</div>
+</div><div class="box small roster class" id="id1c0">
+<div class="number">7</div>
+<div class='content'>
+<ul>
+<li><span class="name">A203 - AV1fDW - Tov</span></li>
+<li><span class="name"></span></li>
+<li><span class="class-time">14:00 - 14:45</span></li>
+<li><span>T.J. Overbeek</span></li>
+<li id="id1d4" hidden="" data-wicket-placeholder=""></li>
+<li><a id="id1bf" href="https://elo.somtoday.nl/home/roster?+detail=4307398960919&amp;+datum=12-01-2022" onClick="event.cancelBubble = true;">Openen</a> </li>
+</ul>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+<div id="id164" hidden="" data-wicket-placeholder=""></div>
+<div class="roosterDetail"></div>
+<div id="id165" hidden="" data-wicket-placeholder=""></div>
+<div id="id166" hidden="" data-wicket-placeholder=""></div>
+<div id="id167" hidden="" data-wicket-placeholder=""></div>
+<div id="id168" hidden="" data-wicket-placeholder=""></div>
+<div id="id169" hidden="" data-wicket-placeholder=""></div>
+<div id="id16a" hidden="" data-wicket-placeholder=""></div>
+</div>
+<div>&nbsp;</div>
+</div>
+</div>
+<div class="loaderOverlay hidden">
+<div class="overlay">&nbsp;</div>
+<div class="loader">&nbsp;</div>
+</div>
+
+</div>
+</div>
+<div id="id16b">
+
+</div>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6cc6c2298da51e89","token":"731646cca86f49ccb215c79dc7c6ab38","version":"2021.12.0","si":100}' crossorigin="anonymous"></script>
+</body>
+</html>
+
